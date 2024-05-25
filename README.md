@@ -72,3 +72,4 @@ export default function Home() {
 - Website - [Haiying Liao](https://haiying-liao.vercel.app/)
 - Frontend Mentor - [@HaiyingLiao](https://www.frontendmentor.io/profile/HaiyingLiao)
 - X - [@Haiyig_Liao](https://x.com/Haiying_Liao)
+- Instagram - [Haiying Liao](https://www.instagram.com/haiying_liao/)
