@@ -18,7 +18,10 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![](./screenshot.jpg)
+
+![Screenshot 2024-05-25 at 16-45-03 Recipe Page](https://github.com/HaiyingLiao/Recipe-Page/assets/125102794/847e6ff9-87c8-443b-8a0e-1de696c448ff)
+
+
 
 ### Links
 
