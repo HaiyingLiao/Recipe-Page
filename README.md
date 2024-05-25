@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - Recipe page solution
 
-## Getting Started
+This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+
+## Overview
+
+### Screenshot
+
+![](./screenshot.jpg)
+
+### Links
+
+- Solution URL: [https://github.com/HaiyingLiao/Recipe-Page](https://github.com/HaiyingLiao/Recipe-Page)
+- Live Site URL: [https://recipe-page-tau-nine.vercel.app/](https://recipe-page-tau-nine.vercel.app/)
+
+## My process
+
+### Built with
+
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCss](https://tailwindcss.com/)
+- Semantic HTML5 markup
+
+### What I learned
+
+Learnt how to use multiple fonts in nextJS 14.
+
+```js
+//make a separate font.ts file
+import { Outfit, Young_Serif } from 'next/font/google';
+
+export const outfit = Outfit({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+});
+
+export const young_serif = Young_Serif({ subsets: ['latin'], weight: ['400'] });
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```js
+// use fonts in any pages
+import { young_serif } from './fonts';
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+export default function Home() {
+  return <h1 className={young_serif.className}>Content</h1>;
+}
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Useful resources
 
-## Learn More
+- [Stackoverflow answer](https://stackoverflow.com/questions/75674866/adding-favicon-to-nextjs-app-router-application) - The most voted answer here helped me solve how to change favicon in next14.
+- [NextJs Doc](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) - This explained how to use multiuple fonts in next14. I'd recommend it to anyone still learning this concept.
 
-To learn more about Next.js, take a look at the following resources:
+## Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Website - [Haiying Liao](https://haiying-liao.vercel.app/)
+- Frontend Mentor - [@HaiyingLiao](https://www.frontendmentor.io/profile/HaiyingLiao)
+- X - [@Haiyig_Liao](https://x.com/Haiying_Liao)
